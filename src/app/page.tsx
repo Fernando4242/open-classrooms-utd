@@ -18,12 +18,12 @@ const HOUR_FORMAT = "h:mm A";
 const cstOffset = -360;
 
 export default function Home() {
-  const [time, setTime] = useState(dayjs());
-  const [day, setDay] = useState(DAYS_OF_THE_WEEK[time.day()]);
-  const [data, setData] = useState(calculateClassroomStatus(day, time));
+  const [time, setTime] = useState<dayjs.Dayjs | null>(dayjs());
+  const [day, setDay] = useState(DAYS_OF_THE_WEEK[time?.day() ?? 0]);
+  const [data, setData] = useState(calculateClassroomStatus(day, time ?? dayjs()));
 
   const updateData = () => {
-    setData(calculateClassroomStatus(day, time));
+    setData(calculateClassroomStatus(day, time ?? dayjs()));
   };
 
   return (
@@ -41,19 +41,22 @@ export default function Home() {
                 label: item,
                 value: item,
               }))}
-              onChange={(value) => {setDay(value)}}
+              onChange={(value) => {
+                setDay(value);
+              }}
             />
             <TimePicker
               use12Hours
-              defaultValue={time}
+              defaultValue={time ?? dayjs()}
               format={HOUR_FORMAT}
-              onChange={(time, timeString) => {
-                setTime(time)
+              onChange={(
+                time: dayjs.Dayjs | null,
+                timeString: string | null
+              ) => {
+                setTime(time);
               }}
             />
-            <Button onClick={updateData}>
-              Update
-            </Button>
+            <Button onClick={updateData}>Update</Button>
           </Space>
         }
       >
@@ -68,7 +71,7 @@ export default function Home() {
                 //     src={`https://xsgames.co/randomusers/avatar.php?g=pixel&key=${index}`}
                 //   />
                 // }
-                title={<a href="https://ant.design">{item.classroom}</a>}
+                title={<a href="#">{item.classroom}</a>}
                 description={item.message}
               />
             </List.Item>
@@ -79,8 +82,8 @@ export default function Home() {
   );
 }
 
-function calculateClassroomStatus( testDay: string, currentTime: dayjs.Dayjs) {
-  const classrooms = schedules.schedules;
+function calculateClassroomStatus(testDay: string, currentTime: dayjs.Dayjs) {
+  const classrooms: any = schedules.schedules;
   currentTime = currentTime;
 
   const openClassrooms: {
@@ -93,11 +96,19 @@ function calculateClassroomStatus( testDay: string, currentTime: dayjs.Dayjs) {
 
     for (const time of times) {
       const day = time.day;
-      const [startTime, endTime] = time.time.split("-").map((time:string) => time.toUpperCase());
+      const [startTime, endTime] = time.time
+        .split("-")
+        .map((time: string) => time.toUpperCase());
 
       if (day === testDay) {
-        const startDayjs = dayjs(currentTime.format('YYYY-MM-DD') + " " + startTime, 'YYYY-MM-DD hh:mmA');
-        const endDayjs = dayjs(currentTime.format('YYYY-MM-DD') + " " + endTime,'YYYY-MM-DD hh:mmA');
+        const startDayjs = dayjs(
+          currentTime.format("YYYY-MM-DD") + " " + startTime,
+          "YYYY-MM-DD hh:mmA"
+        );
+        const endDayjs = dayjs(
+          currentTime.format("YYYY-MM-DD") + " " + endTime,
+          "YYYY-MM-DD hh:mmA"
+        );
 
         if (
           startDayjs.isBefore(currentTime) &&
@@ -117,7 +128,9 @@ function calculateClassroomStatus( testDay: string, currentTime: dayjs.Dayjs) {
 
     if (open && nextClassStart !== null) {
       const remainingTime = nextClassStart.diff(currentTime, "minutes");
-      const message = `The classroom will be open for the next ${remainingTime} minutes until the next class starts at ${nextClassStart.format(HOUR_FORMAT)}.`;
+      const message = `The classroom will be open for the next ${remainingTime} minutes until the next class starts at ${nextClassStart.format(
+        HOUR_FORMAT
+      )}.`;
       openClassrooms[key] = message;
     } else if (open) {
       openClassrooms[
@@ -137,11 +150,19 @@ function calculateClassroomStatus( testDay: string, currentTime: dayjs.Dayjs) {
   }
 
   return results.sort((a, b) => {
-    if (a.message === "The classroom will be open for the rest of the day." && b.message !== "The classroom will be open for the rest of the day.") return -1;
-    if (b.message === "The classroom will be open for the rest of the day." && a.message !== "The classroom will be open for the rest of the day.") return 1;
+    if (
+      a.message === "The classroom will be open for the rest of the day." &&
+      b.message !== "The classroom will be open for the rest of the day."
+    )
+      return -1;
+    if (
+      b.message === "The classroom will be open for the rest of the day." &&
+      a.message !== "The classroom will be open for the rest of the day."
+    )
+      return 1;
 
-    const aTime = parseInt(a.message.split(" ")[8])
-    const bTime = parseInt(b.message.split(" ")[8])
+    const aTime = parseInt(a.message.split(" ")[8]);
+    const bTime = parseInt(b.message.split(" ")[8]);
     return aTime - bTime;
   });
 }
