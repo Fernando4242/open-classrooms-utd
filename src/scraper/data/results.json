@@ -1,0 +1,531 @@
+[
+  {
+    "room": "AD 2.232",
+    "message": "The classroom will be open for the next 105.0 minutes until the next class starts at 02:30PM."
+  },
+  {
+    "room": "AD 2.216",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "ECSW 2.325",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "SCI 3.250",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "ML2 1.218",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "FN 2.210",
+    "message": "The classroom will be open for the next 375.0 minutes until the next class starts at 07:00PM."
+  },
+  {
+    "room": "ML2 1.216",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "CB 1.206",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "SPN 1.221",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "GR 4.301",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "SPN 1.121",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "JSOM 2.801",
+    "message": "The classroom will be open for the next 195.0 minutes until the next class starts at 04:00PM."
+  },
+  {
+    "room": "JSOM 11.206",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "FO 2.702",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "FO 1.202",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "GR 2.302",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "JO 3.601",
+    "message": "The classroom will be open for the next 195.0 minutes until the next class starts at 04:00PM."
+  },
+  {
+    "room": "AD 2.238",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "SCI 3.220",
+    "message": "The classroom will be open for the next 195.0 minutes until the next class starts at 04:00PM."
+  },
+  {
+    "room": "ECSW 4.325",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "JSOM 1.110",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "JSOM 11.210",
+    "message": "The classroom will be open for the next 375.0 minutes until the next class starts at 07:00PM."
+  },
+  {
+    "room": "JSOM 1.107",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "JSOM 2.106",
+    "message": "The classroom will be open for the next 195.0 minutes until the next class starts at 04:00PM."
+  },
+  {
+    "room": "JSOM 1.212",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "JSOM 1.217",
+    "message": "The classroom will be open for the next 195.0 minutes until the next class starts at 04:00PM."
+  },
+  {
+    "room": "SOM 1.102",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "No Meeting Room",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "JSOM 2.115",
+    "message": "The classroom will be open for the next 375.0 minutes until the next class starts at 07:00PM."
+  },
+  {
+    "room": "JSOM 1.117",
+    "message": "The classroom will be open for the next 195.0 minutes until the next class starts at 04:00PM."
+  },
+  {
+    "room": "FN 2.214",
+    "message": "The classroom will be open for the next 195.0 minutes until the next class starts at 04:00PM."
+  },
+  {
+    "room": "ECSS 2.201",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "JSOM 12.202",
+    "message": "The classroom will be open for the next 375.0 minutes until the next class starts at 07:00PM."
+  },
+  {
+    "room": "JO 4.102",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "JSOM 2.103",
+    "message": "The classroom will be open for the next 195.0 minutes until the next class starts at 04:00PM."
+  },
+  {
+    "room": "GR 3.402A",
+    "message": "The classroom will be open for the next 375.0 minutes until the next class starts at 07:00PM."
+  },
+  {
+    "room": "GR 3.402B",
+    "message": "The classroom will be open for the next 375.0 minutes until the next class starts at 07:00PM."
+  },
+  {
+    "room": "GR 4.428",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "SPN 1.115",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "JO 4.614",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "HH 2.502",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "ECSN 3.114",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "ECSS 2.203",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "ECSW 3.250",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "ECSS 2.412",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "ECSN 2.316",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "ECSW 1.355",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "MC 2.410",
+    "message": "The classroom will be open for the next 105.0 minutes until the next class starts at 02:30PM."
+  },
+  {
+    "room": "ML1 1.118",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "ML1 1.122",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "FO 2.404",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "ECSW 2.210",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "ECSW 2.250",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "ML1 1.110",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "ML1 1.114",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "ECSW 1.365",
+    "message": "The classroom will be open for the next 195.0 minutes until the next class starts at 04:00PM."
+  },
+  {
+    "room": "ML1 1.106",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "CB 1.222",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "SLC 1.204",
+    "message": "The classroom will be open for the next 285.0 minutes until the next class starts at 05:30PM."
+  },
+  {
+    "room": "CB 1.214",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "SCI 2.240",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "FN 2.302",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "SCI 3.260",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "SCI 2.235",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "ROC 2.701",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "GR 3.206",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "GR 4.204",
+    "message": "The classroom will be open for the next 195.0 minutes until the next class starts at 04:00PM."
+  },
+  {
+    "room": "CRA 12.110",
+    "message": "The classroom will be open for the next 105.0 minutes until the next class starts at 02:30PM."
+  },
+  {
+    "room": "JO 2.114",
+    "message": "The classroom will be open for the next 135.0 minutes until the next class starts at 03:00PM."
+  },
+  {
+    "room": "JSOM 2.117",
+    "message": "The classroom will be open for the next 375.0 minutes until the next class starts at 07:00PM."
+  },
+  {
+    "room": "SLC 2.304",
+    "message": "The classroom will be open for the next 195.0 minutes until the next class starts at 04:00PM."
+  },
+  {
+    "room": "FN 2.204",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "JSOM 2.802",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "JSOM 2.803",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "CB 1.202",
+    "message": "The classroom will be open for the next 375.0 minutes until the next class starts at 07:00PM."
+  },
+  {
+    "room": "JO 4.708",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "JO 3.536",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "JO 4.502",
+    "message": "The classroom will be open for the next 285.0 minutes until the next class starts at 05:30PM."
+  },
+  {
+    "room": "JO 4.112",
+    "message": "The classroom will be open for the next 375.0 minutes until the next class starts at 07:00PM."
+  },
+  {
+    "room": "SCI 1.210",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "SLC 1.102",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "ECSS 2.103",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "RHW 2.401",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "ECSS 2.305",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "GR 3.302",
+    "message": "The classroom will be open for the next 195.0 minutes until the next class starts at 04:00PM."
+  },
+  {
+    "room": "HH 2.402",
+    "message": "The classroom will be open for the next 75.0 minutes until the next class starts at 02:00PM."
+  },
+  {
+    "room": "HH 2.706",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "CRA 12.120",
+    "message": "The classroom will be open for the next 135.0 minutes until the next class starts at 03:00PM."
+  },
+  {
+    "room": "RHNW 2.002",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "RHNW 1.001",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "RHW 2.402",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "RHW 2.400",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "ATC 2.705E",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "CD1 C.140",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "CBH 1.104",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "CD1 A.229",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "CD2 J.108",
+    "message": "The classroom will be open for the next 285.0 minutes until the next class starts at 05:30PM."
+  },
+  {
+    "room": "CD1 B.108",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "CRA 11.205",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "FO 1.502",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "JSOM 2.901",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "JSOM 2.107",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "ROW 1.141",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "ATC 4.906",
+    "message": "The classroom will be open for the next 375.0 minutes until the next class starts at 07:00PM."
+  },
+  {
+    "room": "SP2 11.219",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "SLC 1.211",
+    "message": "The classroom will be open for the next 245.0 minutes until the next class starts at 04:50PM."
+  },
+  {
+    "room": "SCI 3.230",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "PHY 1.202",
+    "message": "The classroom will be open for the next 195.0 minutes until the next class starts at 04:00PM."
+  },
+  {
+    "room": "PHY 1.304",
+    "message": "The classroom will be open for the next 105.0 minutes until the next class starts at 02:30PM."
+  },
+  {
+    "room": "ATC 3.205",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "FN 2.304",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "CB 1.210",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "CR 1.508",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "CD2 J.204",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "CD2 J.213",
+    "message": "The classroom is open for the rest of the day."
+  },
+  { "room": "", "message": "The classroom is open for the rest of the day." },
+  {
+    "room": "CRA 12.125",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "FO 2.208",
+    "message": "The classroom will be open for the next 105.0 minutes until the next class starts at 02:30PM."
+  },
+  {
+    "room": "JSOM 1.508",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "JSOM 2.116",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "JSOM 14.501",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "ATC 4.902",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "ATC 1.910",
+    "message": "The classroom will be open for the next 375.0 minutes until the next class starts at 07:00PM."
+  },
+  {
+    "room": "SLC 1.214",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "ML2 1.202",
+    "message": "The classroom will be open for the next 15.0 minutes until the next class starts at 01:00PM."
+  },
+  {
+    "room": "SLC 2.207",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "SCI 2.225",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "FO 3.222",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "JSOM 1.502",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "Blackstone Launchpad",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "JSOM 1.118",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "ECSW 3.210",
+    "message": "The classroom is open for the rest of the day."
+  },
+  {
+    "room": "SCI 2.215",
+    "message": "The classroom is open for the rest of the day."
+  }
+]
