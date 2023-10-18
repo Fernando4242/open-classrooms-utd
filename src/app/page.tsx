@@ -48,7 +48,7 @@ export default function Home() {
       <div className="w-full flex flex-col gap-4 justify-center items-center">
         <Alert
           className="w-full md:w-2/3"
-          message="This is not an official source. The information may not be accurate due to many factors. Please use your own discretion. 😀"
+          message="This is not an official source. The information is based on class schedules and does not include reservations. Please use your own discretion. 😀"
           type="warning"
           showIcon
         />
