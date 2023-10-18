@@ -1,5 +1,16 @@
 "use client";
-import { Card, List, Avatar, Select, TimePicker, Space, Button } from "antd";
+import {
+  Card,
+  List,
+  Avatar,
+  Select,
+  TimePicker,
+  Space,
+  Button,
+  Typography,
+  Input,
+  Alert,
+} from "antd";
 import dayjs from "dayjs";
 import schedules from "../scraper/data/processed_data.json";
 import { useState } from "react";
@@ -19,65 +30,95 @@ const cstOffset = -360;
 
 export default function Home() {
   const [time, setTime] = useState<dayjs.Dayjs | null>(dayjs());
+  const [search, setSearch] = useState<string>("");
   const [day, setDay] = useState(DAYS_OF_THE_WEEK[time?.day() ?? 0]);
-  const [data, setData] = useState(calculateClassroomStatus(day, time ?? dayjs()));
+  const [data, setData] = useState(
+    calculateClassroomStatus(day, time ?? dayjs())
+  );
 
-  const updateData = () => {
+  function updateData() {
     setData(calculateClassroomStatus(day, time ?? dayjs()));
-  };
+  }
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
-      <Card
-        title="Find open classrooms"
-        bordered={false}
-        className="w-full flex-grow"
-        extra={
-          <Space direction="horizontal" size={"middle"}>
-            <Select
-              className="w-32"
-              defaultValue={day}
-              options={DAYS_OF_THE_WEEK.map((item) => ({
-                label: item,
-                value: item,
-              }))}
-              onChange={(value) => {
-                setDay(value);
-              }}
-            />
-            <TimePicker
-              use12Hours
-              defaultValue={time ?? dayjs()}
-              format={HOUR_FORMAT}
-              onChange={(
-                time: dayjs.Dayjs | null,
-                timeString: string | null
-              ) => {
-                setTime(time);
-              }}
-            />
-            <Button onClick={updateData}>Update</Button>
-          </Space>
-        }
-      >
-        <List
-          itemLayout="horizontal"
-          dataSource={data}
-          renderItem={(item, index) => (
-            <List.Item>
-              <List.Item.Meta
-                // avatar={
-                //   <Avatar
-                //     src={`https://xsgames.co/randomusers/avatar.php?g=pixel&key=${index}`}
-                //   />
-                // }
-                title={<a href="#">{item.classroom}</a>}
-                description={item.message}
-              />
-            </List.Item>
-          )}
+    <main className="min-h-screen px-4 py-8 md:px-24 md:py-8">
+      <Typography.Title className="text-center">
+        Open Classrooms UTD
+      </Typography.Title>
+      <div className="w-full flex flex-col gap-4 justify-center items-center">
+        <Alert
+          className="w-full md:w-2/3"
+          message="This is not an official source. The information may not be accurate due to many factors. Please use your own discretion. 😀"
+          type="warning"
+          showIcon
         />
-      </Card>
+        <Card
+          title="Find open classrooms"
+          className="w-full md:w-2/3"
+          extra={
+            <div className="flex flex-row gap-4 flex-wrap py-4 md:p-0 md:flex-nowrap">
+              <Input
+                className="w-full md:w-min"
+                placeholder="Search for classroom"
+                onChange={(e) => setSearch(e.target.value)}
+              />
+              <Space direction="horizontal" size={"middle"}>
+                <Select
+                  className="w-32"
+                  defaultValue={day}
+                  options={DAYS_OF_THE_WEEK.map((item) => ({
+                    label: item,
+                    value: item,
+                  }))}
+                  onChange={(value) => {
+                    setDay(value);
+                  }}
+                />
+                <TimePicker
+                  use12Hours
+                  defaultValue={time ?? dayjs()}
+                  format={HOUR_FORMAT}
+                  onChange={(
+                    time: dayjs.Dayjs | null,
+                    timeString: string | null
+                  ) => {
+                    setTime(time);
+                  }}
+                />
+              </Space>
+              <Button className="w-full md:w-min" onClick={updateData}>Update</Button>
+            </div>
+          }
+        >
+          <div className="h-[72svh] overflow-y-auto">
+            <List
+              itemLayout="horizontal"
+              dataSource={
+                search == ""
+                  ? data
+                  : data.filter((item) =>
+                      item.classroom
+                        .toLowerCase()
+                        .includes(search.toLowerCase())
+                    )
+              }
+              renderItem={(item, index) => (
+                <List.Item>
+                  <List.Item.Meta
+                    // avatar={
+                    //   <Avatar
+                    //     src={`https://xsgames.co/randomusers/avatar.php?g=pixel&key=${index}`}
+                    //   />
+                    // }
+                    title={<a href="#">{item.classroom}</a>}
+                    description={item.message}
+                  />
+                </List.Item>
+              )}
+            />
+          </div>
+        </Card>
+      </div>
     </main>
   );
 }
