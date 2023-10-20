@@ -75,6 +75,7 @@ export default function Home() {
                   }}
                 />
                 <TimePicker
+                  className="w-32"
                   use12Hours
                   defaultValue={time ?? dayjs()}
                   format={HOUR_FORMAT}
